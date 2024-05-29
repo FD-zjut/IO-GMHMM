@@ -1,2 +1,2 @@
 # IO-GMHMM
-It is used for the data-model interactive fault diagnosis.
+It is used for the data-model interaction framework under fault diagnosis.
