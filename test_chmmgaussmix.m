@@ -25,35 +25,29 @@ test_number = 225;
 X_NS0 = x_normalized_NS0(1:training_number,1:end);
 X_NS0_test = x_normalized_NS0(training_number+1:end,1:end);
 X_NS0_test = X_NS0_test(1:test_number,1:end);
-
 X_NS0_lab = data_NS0(1:training_number-9,14);
 
 X_DF5 = x_normalized_DF5(1:training_number,1:end);
-
 X_DF5_test = x_normalized_DF5(training_number+1:end,1:end);
 X_DF5_test = X_DF5_test(1:test_number,1:end);
 X_DF5_lab = data_DF5(1:training_number-9,14);
 
 X_FF6 = x_normalized_FF6(1:training_number,1:end);
-
 X_FF6_test = x_normalized_FF6(training_number+1:end,1:end);
 X_FF6_test = X_FF6_test(1:test_number,1:end);
 X_FF6_lab = data_FF6(1:training_number-9,14);
 
 X_AF7 = x_normalized_AF7(1:training_number,1:end);
-
 X_AF7_test = x_normalized_AF7(training_number+1:end,1:end);
 X_AF7_test = X_AF7_test(1:test_number,1:end);
 X_AF7_lab = data_AF7(1:training_number-9,14);
 
 X_SPF8 = x_normalized_SPF8(1:training_number,1:end);
-
 X_SPF8_test = x_normalized_SPF8(training_number+1:end,1:end);
 X_SPF8_test = X_SPF8_test(1:test_number,1:end);
 X_SPF8_lab = data_SPF8(1:training_number-9,14);
 
 X_GF9 = x_normalized_GF9(1:training_number,1:end);
-
 X_GF9_test = x_normalized_GF9(training_number+1:end,1:end);
 X_GF9_test = X_GF9_test(1:test_number,1:end);
 X_GF9_lab = data_GF9(1:training_number-9,14);
@@ -80,7 +74,7 @@ A=[0,0,0,0,0,0,0,0,0,0,0,0];
 b=[0];
 Aeq=[1,1,1,1,1,1,1,1,1,1,1,1];
 beq=[1];
-LB = [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1];
+LB = [0,0,0,0,0,0,0,0,0,0,0,0];
 UB = [1,1,1,1,1,1,1,1,1,1,1,1];
 max_diedai = 100;
 acc_for = zeros(max_diedai,1);
