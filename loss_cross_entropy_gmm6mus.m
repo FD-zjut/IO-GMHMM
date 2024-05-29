@@ -9,10 +9,10 @@ X_AF7_WF{1} = X_AF7*AF7_w0;
 X_SPF8_WF{1} = X_SPF8*SPF8_w0;
 X_GF9_WF{1} = X_GF9*GF9_w0;
 
-Q = 1;      % state num
-M = 1;      % mix num 
-% Q = 2;      % state num
-% M = 3;      % mix num 
+Q = 2;      % state num
+M = 3;      % mix num 
+% Q = 1;      % state num
+% M = 1;      % mix num 
 [p_start_NS0, A_NS0, phi_NS0, ~] = ChmmGmm(X_NS0_WF, Q, M);
 [p_start_DF5, A_DF5, phi_DF5, ~] = ChmmGmm(X_DF5_WF, Q, M);
 [p_start_FF6, A_FF6, phi_FF6, ~] = ChmmGmm(X_FF6_WF, Q, M);
